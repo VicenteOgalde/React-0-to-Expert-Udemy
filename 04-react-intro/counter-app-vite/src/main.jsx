@@ -9,6 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <App></App>
         <FirstApp title='nice App' subTitle='very nice App'></FirstApp>
-        <CounterApp counter={15}></CounterApp>
+        <CounterApp counter = { 15 }></CounterApp>
     </React.StrictMode>
 )

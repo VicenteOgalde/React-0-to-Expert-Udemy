@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types'
 
-export const CounterApp=({counter})=>{
+
+
+export const CounterApp=({ counter })=>{
+    const handleAdd=(event,counter)=>{
+        counter++;
+    }
     return <>
     <h1>CounterApp</h1>
-    <h2>{counter}</h2>
+    <h2>{ counter }</h2>
+    <button onClick={handleAdd(event,counter)}>+1</button>
     </>
 }
 

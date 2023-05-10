@@ -5,12 +5,12 @@ const newMessage = {m1:"hello",m2:"hello2"};
 
 const getFirstMessage=(message)=>message.m2;
 
-export function FirstApp({title,subTitle}){
+export function FirstApp({ title , subTitle }){
 
     return <>
     <h2>First App {getFirstMessage(newMessage)}</h2>
-    <h3>{title}</h3>
-    <h3>{subTitle}</h3>
+    <h3>{ title }</h3>
+    <h3>{ subTitle }</h3>
     </>
 }
 

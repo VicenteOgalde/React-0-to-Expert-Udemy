@@ -4,3 +4,8 @@ html,body{
     font-family: sans-serif,Arial, Helvetica;
     font-size: 1.3rem;
 }
+
+button{
+    padding: 15px;
+    font-size: 1.3rem;
+}
