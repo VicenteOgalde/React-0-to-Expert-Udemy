@@ -1,15 +1,20 @@
-import PropTypes from 'prop-types'
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+
 
 
 
 export const CounterApp=({ counter })=>{
-    const handleAdd=(event,counter)=>{
-        counter++;
+
+    const [value,setValue]=useState(counter);
+
+    const handleAdd=()=>{
+        setValue((c)=>c+1);
     }
     return <>
     <h1>CounterApp</h1>
-    <h2>{ counter }</h2>
-    <button onClick={handleAdd(event,counter)}>+1</button>
+    <h2>{ value }</h2>
+    <button onClick={handleAdd}>+1</button>
     </>
 }
 
