@@ -9,7 +9,7 @@ export function FirstApp({ title , subTitle }){
 
     return <>
     <h2>First App {getFirstMessage(newMessage)}</h2>
-    <h3>{ title }</h3>
+    <h3 data-testid="test-title">{ title }</h3>
     <h3>{ subTitle }</h3>
     </>
 }

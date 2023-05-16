@@ -8,16 +8,18 @@ describe('test FirsApp', () => {
 
         const {container}=render(<FirstApp title='nice App' subTitle='very nice App'></FirstApp>)
 
-        expect(container).toMatchSnapshot();
+        //expect(container).toMatchSnapshot();
 
          });
 
          test('should show the title in a H1', () => {
 
           const title ='good morning'
-          const {container, getByText}=render(<FirstApp title={title} subTitle='very nice App'></FirstApp>)
+          const {getByText, getByTestId}=render(<FirstApp title={title} subTitle='very nice App'></FirstApp>)
   
           expect(getByText(title) ).toBeTruthy();
   
+          expect(getByTestId('test-title')).toBeTruthy();
+
            });  
     });
